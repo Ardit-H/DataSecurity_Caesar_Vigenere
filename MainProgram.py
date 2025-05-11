@@ -50,14 +50,16 @@ def process_file(encrypt=True):
     try:
         if algo == "Caesar":
             key = int(key)
-            elif algo == "Vigenere":
+        elif algo == "Vigenere":
             if not key.isalpha():
                 raise ValueError("Key for Vigenere must be letters only.")
-                except ValueError as ve:(
-                    messagebox.showerror("Error", f"Invalid key: {ve}"))
-                return
-                input_path = input_file_entry.get()
-                output_path = output_file_entry.get()
+    except ValueError as ve:
+        messagebox.showerror("Error", f"Invalid key: {ve}")
+        return
+
+    input_path = input_file_entry.get()
+    output_path = output_file_entry.get()
+
 
 
 
