@@ -50,6 +50,9 @@ def process_file(encrypt=True):
     try:
         if algo == "Caesar":
             key = int(key)
+            elif algo == "Vigenere":
+            if not key.isalpha():
+                raise ValueError("Key for Vigenere must be letters only.")
 
 
 
