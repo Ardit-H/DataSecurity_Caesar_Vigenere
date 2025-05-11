@@ -45,4 +45,6 @@ def vigenere_decrypt(text, key):
     return result
 
 def process_file(encrypt=True):
+    key = key_entry.get()
+
 
