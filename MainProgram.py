@@ -12,3 +12,6 @@ def caesar_encrypt(text,key):
         else:
             result +=char
     return  result
+
+def caesar_decrypt(text,key):
+    return caesar_encrypt(text,-key)
