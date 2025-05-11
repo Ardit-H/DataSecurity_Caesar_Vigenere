@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5207302a-a447-4e3a-a397-e7eeaa7f7fd0" name="Changes" comment="Funksioni per enkriptim me ane te algoritmit Caesar Chiper">
+    <list default="true" id="5207302a-a447-4e3a-a397-e7eeaa7f7fd0" name="Changes" comment="Funksioni per dekriptim me ane te algoritmit Caesar Cipher">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainProgram.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainProgram.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746980684550</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Funksioni per dekriptim me ane te algoritmit Caesar Cipher">
+      <option name="closed" value="true" />
+      <created>1746980868698</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746980868698</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -107,6 +116,7 @@
     <MESSAGE value="MainProgram.py" />
     <MESSAGE value="importet e nevojshme per projekt: tkiner per krijimin e GUI dhe os per qasje ne funksione te sistemit operativ" />
     <MESSAGE value="Funksioni per enkriptim me ane te algoritmit Caesar Chiper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funksioni per enkriptim me ane te algoritmit Caesar Chiper" />
+    <MESSAGE value="Funksioni per dekriptim me ane te algoritmit Caesar Cipher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funksioni per dekriptim me ane te algoritmit Caesar Cipher" />
   </component>
 </project>
