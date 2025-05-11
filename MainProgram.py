@@ -56,6 +56,8 @@ def process_file(encrypt=True):
                 except ValueError as ve:(
                     messagebox.showerror("Error", f"Invalid key: {ve}"))
                 return
+                input_path = input_file_entry.get()
+
 
 
 
