@@ -44,3 +44,5 @@ def vigenere_decrypt(text, key):
             result += char
     return result
 
+def process_file(encrypt=True):
+
