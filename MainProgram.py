@@ -29,3 +29,40 @@ def vigenere_encrypt(text,key):
         else:
             result+=char
     return  result
+
+def vigenere_decrypt(text, key):
+    result = ""
+    key = key.lower()
+    key_index = 0
+    for char in text:
+        if char.isalpha():
+            shift = -(ord(key[key_index % len(key)]) - ord('a'))
+            base = ord('A') if char.isupper() else ord('a')
+            result += chr((ord(char) - base + shift) % 26 + base)
+            key_index += 1
+        else:
+            result += char
+    return result
+
+def process_file(encrypt=True):
+    key = key_entry.get()
+    algo = algo_var.get()
+    try:
+        if algo == "Caesar":
+            key = int(key)
+        elif algo == "Vigenere":
+            if not key.isalpha():
+                raise ValueError("Key for Vigenere must be letters only.")
+    except ValueError as ve:
+        messagebox.showerror("Error", f"Invalid key: {ve}")
+        return
+
+    input_path = input_file_entry.get()
+    output_path = output_file_entry.get()
+
+
+
+
+
+
+
