@@ -110,5 +110,12 @@ tk.Button(root, text="Browse", command=lambda: output_file_entry.insert(0, filed
 tk.Button(root, text="Encrypt File", command=lambda: process_file(True)).grid(row=4, column=1)
 tk.Button(root, text="Decrypt File", command=lambda: process_file(False)).grid(row=4, column=2)
 
+tk.Label(root, text="Message Box:").grid(row=5, column=0, pady=10)
+message_text = tk.Text(root, height=5, width=50)
+message_text.grid(row=5, column=1, columnspan=2)
+
+tk.Button(root, text="Save Message to File", command=save_message_to_file).grid(row=6, column=1, pady=10)
+
+root.mainloop()
 
 
