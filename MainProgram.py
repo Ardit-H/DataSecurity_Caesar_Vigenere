@@ -93,5 +93,9 @@ tk.Label(root, text="Key:").grid(row=0, column=0)
 key_entry = tk.Entry(root, width=30)
 key_entry.grid(row=0, column=1)
 
+tk.Label(root, text="Algorithm:").grid(row=1, column=0)
+algo_var = tk.StringVar(value="Caesar")
+tk.OptionMenu(root, algo_var, "Caesar", "Vigenere").grid(row=1, column=1)
+
 
 
