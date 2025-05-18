@@ -97,5 +97,10 @@ tk.Label(root, text="Algorithm:").grid(row=1, column=0)
 algo_var = tk.StringVar(value="Caesar")
 tk.OptionMenu(root, algo_var, "Caesar", "Vigenere").grid(row=1, column=1)
 
+tk.Label(root, text="Input File Path:").grid(row=2, column=0)
+input_file_entry = tk.Entry(root, width=50)
+input_file_entry.grid(row=2, column=1)
+tk.Button(root, text="Browse", command=lambda: input_file_entry.insert(0, filedialog.askopenfilename())).grid(row=2, column=2)
+
 
 
