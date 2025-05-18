@@ -67,6 +67,11 @@ if not os.path.exists(input_path):
     with open(input_path, 'r', encoding='utf-8') as f:
         data = f.read()
 
+    if algo == "Caesar":
+        result = caesar_encrypt(data, key) if encrypt else caesar_decrypt(data, key)
+    else:
+        result = vigenere_encrypt(data, key) if encrypt else vigenere_decrypt(data, key)
+
 
 
 
