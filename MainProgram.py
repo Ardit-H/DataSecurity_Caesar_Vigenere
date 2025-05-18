@@ -61,9 +61,10 @@ def process_file(encrypt=True):
     output_path = output_file_entry.get()
 
 
-if not os.path.exists(input_path):
+  if not os.path.exists(input_path):
         messagebox.showerror("Error", "Input file does not exist.")
         return
+
     with open(input_path, 'r', encoding='utf-8') as f:
         data = f.read()
 
@@ -77,7 +78,13 @@ if not os.path.exists(input_path):
 
     messagebox.showinfo("Success", "Operation completed successfully.")
 
-
+def save_message_to_file():
+    message = message_text.get("1.0", tk.END).strip()
+    path = filedialog.asksaveasfilename(defaultextension=".txt")
+    if path:
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write(message)
+        messagebox.showinfo("Saved", "Message saved to file.")
 
 
 
