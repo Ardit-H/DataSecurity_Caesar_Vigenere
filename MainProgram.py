@@ -107,5 +107,8 @@ output_file_entry = tk.Entry(root, width=50)
 output_file_entry.grid(row=3, column=1)
 tk.Button(root, text="Browse", command=lambda: output_file_entry.insert(0, filedialog.asksaveasfilename(defaultextension=".txt"))).grid(row=3, column=2)
 
+tk.Button(root, text="Encrypt File", command=lambda: process_file(True)).grid(row=4, column=1)
+tk.Button(root, text="Decrypt File", command=lambda: process_file(False)).grid(row=4, column=2)
+
 
 
