@@ -49,7 +49,7 @@ Ky është një aplikacion desktop i ndërtuar me Python dhe Tkinter, që ofron 
 * ### Algoritmi Vigenère
 * Fajlli example.txt me përmbajtje: Hello, this is a secret message!
 * Çelësi: secret
-* Rezultati: Ziaos, lvoq mq e mwdvwl wicigqi!
+* Rezultati: Zincs, mzmu zw t kieiim eiujezw!
 
 *(_**Shënim**: rezultatet mund të ndryshojnë varësisht nga implementimi i algoritmit dhe ruajtja e karaktereve jokapitale_)*
 

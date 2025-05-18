@@ -61,7 +61,7 @@ def process_file(encrypt=True):
     output_path = output_file_entry.get()
 
 
-  if not os.path.exists(input_path):
+    if not os.path.exists(input_path):
         messagebox.showerror("Error", "Input file does not exist.")
         return
 
