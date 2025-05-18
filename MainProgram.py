@@ -89,5 +89,9 @@ def save_message_to_file():
 root = tk.Tk()
 root.title("File Encrypt/Decrypt - Caesar & Vigenère")
 
+tk.Label(root, text="Key:").grid(row=0, column=0)
+key_entry = tk.Entry(root, width=30)
+key_entry.grid(row=0, column=1)
+
 
 
