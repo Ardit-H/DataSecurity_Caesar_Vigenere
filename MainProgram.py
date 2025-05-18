@@ -86,7 +86,8 @@ def save_message_to_file():
             f.write(message)
         messagebox.showinfo("Saved", "Message saved to file.")
 
-
+root = tk.Tk()
+root.title("File Encrypt/Decrypt - Caesar & Vigenère")
 
 
 
