@@ -72,6 +72,11 @@ if not os.path.exists(input_path):
     else:
         result = vigenere_encrypt(data, key) if encrypt else vigenere_decrypt(data, key)
 
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(result)
+
+    messagebox.showinfo("Success", "Operation completed successfully.")
+
 
 
 
