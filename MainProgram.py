@@ -102,5 +102,10 @@ input_file_entry = tk.Entry(root, width=50)
 input_file_entry.grid(row=2, column=1)
 tk.Button(root, text="Browse", command=lambda: input_file_entry.insert(0, filedialog.askopenfilename())).grid(row=2, column=2)
 
+tk.Label(root, text="Output File Path:").grid(row=3, column=0)
+output_file_entry = tk.Entry(root, width=50)
+output_file_entry.grid(row=3, column=1)
+tk.Button(root, text="Browse", command=lambda: output_file_entry.insert(0, filedialog.asksaveasfilename(defaultextension=".txt"))).grid(row=3, column=2)
+
 
 
