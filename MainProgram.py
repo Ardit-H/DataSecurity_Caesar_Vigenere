@@ -61,6 +61,13 @@ def process_file(encrypt=True):
     output_path = output_file_entry.get()
 
 
+if not os.path.exists(input_path):
+        messagebox.showerror("Error", "Input file does not exist.")
+        return
+    with open(input_path, 'r', encoding='utf-8') as f:
+        data = f.read()
+
+
 
 
 
